@@ -1,0 +1,6 @@
+FROM ubuntu:latest
+
+RUN mkdir /mydata
+COPY test.txt /mydata/new_test.txt
+
+ENTRYPOINT ["df", "-h"]
